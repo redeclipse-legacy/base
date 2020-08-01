@@ -3683,7 +3683,7 @@ namespace game
         }
         float height = previewent.height + previewent.aboveeye,
               zrad = height/2;
-        vec2 xyrad = vec2(previewent.xradius, previewent.yradius).std::max(height / 4);
+        vec2 xyrad = vec2(previewent.xradius, previewent.yradius).max(height / 4);
         previewent.o = calcmodelpreviewpos(vec(xyrad, zrad), previewent.yaw).addz(previewent.height - zrad);
         previewent.colour = color;
         previewent.model = model;
