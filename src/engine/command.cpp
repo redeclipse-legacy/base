@@ -992,7 +992,7 @@ char *conc(tagval *v, int n, bool space, const char *prefix, int prefixlen)
         default: vlen[i] = 0; break;
     }
 overflow:
-    if(space) len += sntd::max(prefix ? i : i-1, 0);
+    if(space) len += std::max(prefix ? i : i-1, 0);
     char *buf = newstring(len + numlen);
     int offset = 0, numoffset = 0;
     if(prefix)
