@@ -228,7 +228,7 @@ struct queryframe
     int cur, max;
     occludequery queries[MAXQUERY];
 
-    queryframe() : cur(0), std::max(0) {}
+    queryframe() : cur(0), max(0) {}
 
     void flip() { loopi(cur) queries[i].owner = NULL; cur = 0; }
 
