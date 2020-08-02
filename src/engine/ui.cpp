@@ -1225,7 +1225,7 @@ struct gui : guient
             {
                 hitx = (cursorx - uiorigin.x)/uiscale.x;
                 hity = (cursory - uiorigin.y)/uiscale.y;
-                if((mouse_action[0] & GUI_PRESSED) && (std::fabsf(hitx - firstx) > 2 || std::fabsf(hity - firsty) > 2)) mouse_action[0] |= GUI_DRAGGED;
+                if((mouse_action[0] & GUI_PRESSED) && (std::fabs(hitx - firstx) > 2 || std::fabs(hity - firsty) > 2)) mouse_action[0] |= GUI_DRAGGED;
             }
         }
         else

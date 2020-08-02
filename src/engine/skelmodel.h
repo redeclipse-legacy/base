@@ -1700,8 +1700,8 @@ template<class MDL> struct skelcommands : modelcommands<MDL, struct MDL::skelmes
                 }
                 else
                 {
-                    b.pitchmin = -360*std::fabsf(b.pitchscale) + b.pitchoffset;
-                    b.pitchmax = 360*std::fabsf(b.pitchscale) + b.pitchoffset;
+                    b.pitchmin = -360*std::fabs(b.pitchscale) + b.pitchoffset;
+                    b.pitchmax = 360*std::fabs(b.pitchscale) + b.pitchoffset;
                 }
                 return;
             }
@@ -1718,8 +1718,8 @@ template<class MDL> struct skelcommands : modelcommands<MDL, struct MDL::skelmes
         }
         else
         {
-            mdl.pitchmin = -360*std::fabsf(mdl.pitchscale) + mdl.pitchoffset;
-            mdl.pitchmax = 360*std::fabsf(mdl.pitchscale) + mdl.pitchoffset;
+            mdl.pitchmin = -360*std::fabs(mdl.pitchscale) + mdl.pitchoffset;
+            mdl.pitchmax = 360*std::fabs(mdl.pitchscale) + mdl.pitchoffset;
         }
     }
 

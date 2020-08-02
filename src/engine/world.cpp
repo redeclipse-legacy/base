@@ -682,8 +682,8 @@ bool dropentity(extentity &e, int drop = -1)
         {
             vec center;
             mmboundbox(e, m, center, radius);
-            radius.x += std::fabsf(center.x);
-            radius.y += std::fabsf(center.y);
+            radius.x += std::fabs(center.x);
+            radius.y += std::fabs(center.y);
         }
         radius.z = 0.0f;
     }
