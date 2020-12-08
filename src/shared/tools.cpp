@@ -34,6 +34,12 @@ int detrnd(int seed, int value)
     return rnddet(algseed);
 }
 
+// randomMT has been renamed to tmprnd for adhoc RNG
+uint tmprnd()
+{
+    return rndalg();
+}
+
 ///////////////////////// network ///////////////////////
 
 // all network traffic is in 32bit ints, which are then compressed using the following simple scheme (assumes that most values are small).
